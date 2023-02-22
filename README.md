@@ -1,38 +1,51 @@
-# create-svelte
+# wasteof.time
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+> **Warning**
+> This is still in development, most features are not implemented yet.
 
-## Creating a project
+Another generic social media that was made to be a bootleg of [wasteof.money](https://wasteof.money/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+![Preview1](https://user-images.githubusercontent.com/78447219/220648772-280d8d57-606b-4e9b-b741-7dc576467ca7.png)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Setting up
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+> **Note**
+> This uses Pocketbase 12.3, things might be outdated.
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the repo and cd'ing in
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+$ git clone https://github.com/Late-Is-Cool/wasteof.time.git && cd wasteof.time
 ```
 
-## Building
-
-To create a production version of your app:
+Install the dependencies
 
 ```bash
-npm run build
+$ npm install
 ```
 
-You can preview the production build with `npm run preview`.
+Create .env file and set variables (Check .env.example)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```bash
+$ touch .env
+```
+
+Start the development server
+
+```bash
+$ npm run dev
+```
+
+---
+
+Build for production
+
+```bash
+$ npm run build
+```
+
+Preview production build
+
+```bash
+$ npm run preview
+```

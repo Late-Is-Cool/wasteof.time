@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-	.link {
-		@apply font-bold;
+#nprogress {
+	.bar {
+		@apply z-[60] !bg-white;
+	}
+	.peg {
+		@apply !hidden;
+	}
+	.spinner {
+		@apply !hidden;
+	}
+}
+
+.ProseMirror {
+	p.is-editor-empty:first-child::before {
+		@apply text-secondary-300 float-left h-0 pointer-events-none content-["Tell_us_something!"];
 	}
 }
